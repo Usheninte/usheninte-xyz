@@ -41,6 +41,11 @@
   background-color: #e7e9eb;
 }
 
+.img-size {
+  width: auto;
+  height: auto;
+}
+
 .link-colour {
   color: #3a9fe5;
   text-decoration: underline;
