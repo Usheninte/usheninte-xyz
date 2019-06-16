@@ -1,0 +1,59 @@
+#navigation {
+  display: inline-block;
+}
+
+.note {
+  color: #3a9fe5;
+  font-style: bold;
+  text-decoration: underline;
+  text-decoration-color: #232425;
+}
+
+.user-img {
+  width: 70%;
+  height: auto;
+  margin: 4em 0 2em 0;
+  border-radius: 50%;
+}
+
+.bold-under-white {
+  color: #3a9fe5;
+  font-style: bold;
+  text-decoration: underline;
+  text-decoration-color: #fff;
+}
+
+.skills {
+  padding: 1em;
+}
+
+.skillset {
+  padding: 1em;
+  margin: 0.5em;
+  border-radius: 10%;
+  background-color: #3a9fe5;
+}
+
+.skillset-light {
+  padding: 1em;
+  margin: 0.5em;
+  border-radius: 10%;
+  background-color: #e7e9eb;
+}
+
+.link-colour {
+  color: #3a9fe5;
+  text-decoration: underline;
+  text-decoration-color: #e7e9eb;
+  padding: 1em;
+}
+
+.white-society {
+  color: #e7e9eb;
+}
+
+.footer-style {
+  color: #3a9fe5;
+  text-align: center;
+  margin: 4em 0 2em 0;
+}

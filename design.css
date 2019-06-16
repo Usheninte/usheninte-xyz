@@ -1,0 +1,94 @@
+/* Bootstrap 4 */
+@import url('https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css');
+/* FontAwesome */
+@import url('https://use.fontawesome.com/releases/v5.7.1/css/all.css');
+/* Fonts */
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,700');
+
+/* General Styles */
+body {
+  color: #ffffff;
+  text-align: center;
+  background-color: #232425;
+  font-family: 'Raleway', sans-serif;
+  margin-bottom: 3em;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+}
+a {
+  color: #000000;
+  text-decoration: none;
+}
+/* 
+.menu-item {
+  border-radius: 25%;
+  margin: 0 1em 0 1em;
+  background-color: #3A9FE5;
+  padding: 0.5em 2em 0.5em 2em;
+} 
+*/
+#about {
+  margin: 1em 20em 0 20em;
+  padding: 1em 4em 2em 4em;
+}
+.stack {
+  display: block;
+  color: #000000;
+  margin: 0 16em 1em 16em;
+  padding: 0 2em 0.5em 2em;
+}
+/* 
+.work {
+  color: #000000;
+  background-color: #e7e9eb;
+  margin: 0 16em 1em 16em;
+  padding: 0.5em 2em 0.5em 2em;
+} 
+*/
+/* Mobile View */
+@media all and (max-width: 1200px) {
+  #insignia {
+    width: 28%;
+    height: auto;
+  }
+  #about {
+    margin: 0 6em 0 6em;
+    padding: 1.5em 6em 1em 6em;
+  }
+  .stack {
+    margin: 0 2em 1em 2em;
+    padding: 0.5em 1em 0.5em 1em;
+  }
+  /* 
+  .work {
+    margin: 0 2em 1em 2em;
+    padding: 0.5em 1em 0.5em 1em;
+  } 
+  */
+}
+@media all and (max-width: 600px) {
+  .menu-item {
+    display: block;
+    margin: 1em 2em 1em 2em;
+    padding: 0.5em 0 0.5em 0;
+  }
+  #insignia {
+    width: 42%;
+    height: auto;
+  }
+  #about {
+    margin: 0 1em 0 1em;
+    padding: 0.5em 2em 0.5em 2em;
+  }
+  .stack {
+    margin: 0 2em 1em 2em;
+    padding: 0.5em 1em 0.5em 1em;
+  }
+  /* 
+  .work {
+    margin: 0 2em 1em 2em;
+    padding: 0.5em 1em 0.5em 1em;
+  } 
+  */
+}
