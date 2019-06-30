@@ -41,6 +41,14 @@
   background-color: #e7e9eb;
 }
 
+.skillset-off {
+  padding: 1em;
+  margin: 0.5em;
+  border-radius: 10%;
+  color: #232425;
+  background-color: #232425;
+}
+
 .img-size {
   width: 90%;
   height: auto;
