@@ -71,6 +71,12 @@
 
 /* Contact Form */
 
+.under-blue {
+  text-decoration: underline;
+  text-decoration-color: #3a9fe5;
+  padding: 0.5em 1em;
+}
+
 .contact {
   margin: 2em 0;
   background-color: #f0f0f0;
