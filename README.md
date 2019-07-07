@@ -5,3 +5,4 @@ I am a passionate and emotionally intelligent software engineer, open to new and
 ## Profiles
 > * [LinkedIn](https://linkedin.com/in/usheninte/)
 > * [Twitter](https://twitter.com/Usheninte)
+> * [freeCodeCamp Developer News](https://www.freecodecamp.org/news/author/usheninte/)
