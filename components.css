@@ -1,3 +1,5 @@
+/* NavBar */
+
 #navigation {
   display: inline-block;
 }
@@ -8,6 +10,8 @@
   text-decoration: underline;
   text-decoration-color: #232425;
 }
+
+/* About */
 
 .user-img {
   width: 70%;
@@ -22,6 +26,8 @@
   text-decoration: underline;
   text-decoration-color: #fff;
 }
+
+/* Skills */
 
 .skills {
   padding: 1em;
@@ -49,6 +55,8 @@
   background-color: #232425;
 }
 
+/* Pluralsight GCP */
+
 .img-size {
   width: 90%;
   height: auto;
@@ -61,9 +69,17 @@
   padding: 1em;
 }
 
+/* Contact Form */
+
+
+
+/* Social Media Icons */
+
 .white-society {
   color: #e7e9eb;
 }
+
+/* Footer */
 
 .footer-style {
   color: #3a9fe5;
