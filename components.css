@@ -71,7 +71,12 @@
 
 /* Contact Form */
 
-
+.contact {
+  margin: 2em 0;
+  background-color: #f0f0f0;
+  color: #232425;
+  padding: 1em; 
+}
 
 /* Social Media Icons */
 
