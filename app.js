@@ -10,7 +10,6 @@ firebase.initializeApp(firebaseConfig);
 
 // Initialize Cloud Firestore
 const db = firebase.firestore();
-let messagesRef = db.collection('messages');
 
 // Listen for form submit
 document.getElementById('contactForm').addEventListener('submit', submitForm);
@@ -19,34 +18,39 @@ document.getElementById('contactForm').addEventListener('submit', submitForm);
 function submitForm(e){
   e.preventDefault();
 
-  // Get values
-  // Application form text values
-  let fullName = getInputVal('fullName');
-  let emailAddress = getInputVal('emailAddress');
-  let subject = getInputVal('subject');
-  let message = getInputVal('message');
+  db.collection("messages").add({
+      first: "Ada",
+      last: "Lovelace",
+      born: 1815
+  })
+  .then(function(docRef) {
+      console.log("Document written with ID: ", docRef.id);
+  })
+  .catch(function(error) {
+      console.error("Error adding document: ", error);
+  });
 
-  // Save application to firebase function
-  messagesRef.add({
+  // Get values
+  // Contact form text values
+  let fullName = document.getElementById('fullName');
+  let emailAddress = document.getElementById('emailAddress');
+  let subject = document.getElementById('subject');
+  let message = document.getElementById('message');
+
+  // Save message to firebase function
+
+  db.collection("messages").add({
     fullName: fullName,
     emailAddress: emailAddress,
     subject: subject,
     message: message
   })
   .then(function(docRef) {
-    console.log("Document written with ID: ", messagesRef.id);
+    console.log("Document written with ID: ", docRef.id);
   })
   .catch(function(error) {
     console.error("Error adding document: ", error);
   });
-
-  
-  // .doc(emailAddress).set({
-  //   fullName: fullName,
-  //   emailAddress: emailAddress,
-  //   subject: subject,
-  //   message: message
-  // })
 
 }
 
