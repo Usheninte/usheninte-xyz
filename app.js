@@ -3,7 +3,7 @@ const firebase = require("firebase");
 require("firebase/firestore");
 
 // Your web app's Firebase configuration
-var firebaseConfig = {
+const firebaseConfig = {
   apiKey: process.env.API_KEY,
   authDomain: process.env.AUTO_DOMAIN,
   databaseURL: process.env.DATABASE_URL,
@@ -15,5 +15,9 @@ var firebaseConfig = {
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
 // Initialize Cloud Firestore
-var db = firebase.firestore();
+const db = firebase.firestore();
 
+let fullName = document.querySelector('#fullName');
+let emailAddress = document.querySelector('#emailAddress');
+let subject = document.querySelector('#subject');
+let message = document.querySelector('#message');
