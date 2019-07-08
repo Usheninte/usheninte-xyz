@@ -16,10 +16,33 @@ const firebaseConfig = {
 firebase.initializeApp(firebaseConfig);
 // Initialize Cloud Firestore
 const db = firebase.firestore();
+let messagesRef = db.collection("messages");
 
-// Targeting form elements
-let fullName = document.querySelector('#fullName');
-let emailAddress = document.querySelector('#emailAddress');
-let subject = document.querySelector('#subject');
-let message = document.querySelector('#message');
+// Listen for form submit
+document.getElementById('contactForm').addEventListener('submit', submitForm);
 
+// Submit form
+function submitForm(e){
+  e.preventDefault();
+
+  // Get values
+  // Application form text values
+  let fullName = getInputVal('fullName');
+  let emailAddress = getInputVal('emailAddress');
+  let subject = getInputVal('subject');
+  let message = getInputVal('message');
+
+  // Save application to firebase function
+  messagesRef.doc(emailAddress).set({
+    fullName: fullName,
+    emailAddress: emailAddress,
+    subject: subject,
+    message: message
+  })
+
+}
+
+// Function to get form values
+function getInputVal(id){
+  return document.getElementById(id).value;
+}
