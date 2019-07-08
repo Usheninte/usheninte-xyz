@@ -17,7 +17,9 @@ firebase.initializeApp(firebaseConfig);
 // Initialize Cloud Firestore
 const db = firebase.firestore();
 
+// Targeting form elements
 let fullName = document.querySelector('#fullName');
 let emailAddress = document.querySelector('#emailAddress');
 let subject = document.querySelector('#subject');
 let message = document.querySelector('#message');
+
