@@ -122,6 +122,36 @@
 /* Mobile Responsive */
 
 /* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+  
+  .contact {
+    margin: 2em 3.4em;
+    width: 80%;
+  }
+
+  #fullName {
+    width: 60%;
+  }
+  
+  #emailAddress {
+    width: 60%;
+  }
+  
+  #subject {
+    width: 80%;
+  }
+  
+  #message {
+    width: 100%;
+  }
+  
+}
+
+/* 
   ##Device = Most of the Smartphones Mobiles (Portrait)
   ##Screen = B/w 320px to 479px
 */
