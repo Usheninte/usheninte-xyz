@@ -89,15 +89,15 @@
 }
 
 #fullName {
-  width: 30%;
+  width: 40%;
 }
 
 #emailAddress {
-  width: 30%;
+  width: 40%;
 }
 
 #subject {
-  width: 80%;
+  width: 60%;
 }
 
 #message {
