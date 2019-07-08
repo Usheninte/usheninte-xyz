@@ -122,6 +122,36 @@
 /* Mobile Responsive */
 
 /* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  
+  .contact {
+    margin: 2em 6.2em;
+    width: 80%;
+  }
+
+  #fullName {
+    width: 80%;
+  }
+  
+  #emailAddress {
+    width: 80%;
+  }
+  
+  #subject {
+    width: 100%;
+  }
+  
+  #message {
+    width: 100%;
+  }
+  
+}
+
+/* 
   ##Device = Low Resolution Tablets, Mobiles (Landscape)
   ##Screen = B/w 481px to 767px
 */
