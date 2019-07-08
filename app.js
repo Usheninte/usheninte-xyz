@@ -1,21 +1,15 @@
-const firebase = require("firebase");
+const firebase = require('firebase');
 // Required for side-effects
-require("firebase/firestore");
+require('firebase/firestore');
 
 // Your web app's Firebase configuration
-const firebaseConfig = {
-  apiKey: process.env.API_KEY,
-  authDomain: process.env.AUTO_DOMAIN,
-  databaseURL: process.env.DATABASE_URL,
-  projectId: process.env.PROJECT_ID,
-  messagingSenderId: process.env.MSG_SEND_ID,
-  appId: process.env.APP_ID
-};
+const firebaseConfig = require('./firebaseConfig');
+
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
 // Initialize Cloud Firestore
 const db = firebase.firestore();
-let messagesRef = db.collection("messages");
+let messagesRef = db.collection('messages');
 
 // Listen for form submit
 document.getElementById('contactForm').addEventListener('submit', submitForm);
