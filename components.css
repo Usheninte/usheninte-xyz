@@ -81,7 +81,11 @@
   margin: 2em 0;
   background-color: #f0f0f0;
   color: #232425;
-  padding: 1em; 
+  padding: 1em;
+}
+
+.contactForm {
+  text-align: justify;
 }
 
 #fullName {
@@ -90,6 +94,14 @@
 
 #emailAddress {
   width: 30%;
+}
+
+#subject {
+  width: 80%;
+}
+
+#message {
+  width: 80%;
 }
 
 /* Social Media Icons */
