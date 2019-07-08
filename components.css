@@ -84,8 +84,12 @@
   padding: 1em; 
 }
 
-#subject {
-  width: 50%
+#fullName {
+  width: 30%;
+}
+
+#emailAddress {
+  width: 30%;
 }
 
 /* Social Media Icons */
