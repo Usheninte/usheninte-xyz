@@ -78,7 +78,7 @@
 }
 
 .contact {
-  margin: 2em 0;
+  margin: 2em 16em;
   width: 60%;
   background-color: #f0f0f0;
   color: #232425;
@@ -117,4 +117,17 @@
   color: #3a9fe5;
   text-align: center;
   margin: 4em 0 2em 0;
+}
+
+/* Mobile Responsive */
+
+/* 
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  
+  
+  
 }
