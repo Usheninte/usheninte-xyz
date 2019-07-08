@@ -7,6 +7,7 @@ const firebaseConfig = require('./firebaseConfig');
 
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
+
 // Initialize Cloud Firestore
 const db = firebase.firestore();
 let messagesRef = db.collection('messages');
@@ -26,12 +27,26 @@ function submitForm(e){
   let message = getInputVal('message');
 
   // Save application to firebase function
-  messagesRef.doc(emailAddress).set({
+  messagesRef.add({
     fullName: fullName,
     emailAddress: emailAddress,
     subject: subject,
     message: message
   })
+  .then(function(docRef) {
+    console.log("Document written with ID: ", messagesRef.id);
+  })
+  .catch(function(error) {
+    console.error("Error adding document: ", error);
+  });
+
+  
+  // .doc(emailAddress).set({
+  //   fullName: fullName,
+  //   emailAddress: emailAddress,
+  //   subject: subject,
+  //   message: message
+  // })
 
 }
 
