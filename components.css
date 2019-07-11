@@ -75,16 +75,18 @@
 }
 
 .contact {
-  margin: 2em 16em;
+  margin-top: 2em;
   width: 60%;
   background-color: #f0f0f0;
   color: #232425;
   padding: 1em;
 }
 
+
 #contactForm {
-  text-align: justify;
+ text-align: justify;
 }
+
 
 #fullName {
   width: 40%;
@@ -96,10 +98,6 @@
 
 #subject {
   width: 60%;
-}
-
-#message {
-  width: 80%;
 }
 
 /* Social Media Icons */
