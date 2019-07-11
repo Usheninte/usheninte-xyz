@@ -153,7 +153,8 @@
 
   <div class="container-fluid contact">
     <h4 class="under-blue">Contact Me</h4>
-    <form id="contactForm">
+    <form id="contactForm" name="contactForm" 
+          method="POST" data-netlify="true">
       <div class="form-group">
         <label for="fullName">Full Name</label>
         <input type="text" class="form-control" 
@@ -174,8 +175,7 @@
         <textarea class="form-control" 
                   id="message" rows="5" placeholder="... Message"></textarea>
       </div>
-      <input type="submit" id="submitForm"
-              class="btn btn-primary mb-2"></input>
+      <input type="submit" class="btn btn-primary mb-2"></input>
     </form>
   </div>
 
