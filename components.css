@@ -48,11 +48,8 @@
 }
 
 .skillset-off {
-  padding: 1em;
-  margin: 0.5em;
-  border-radius: 10%;
   color: #232425;
-  background-color: #232425;
+  display: hidden;
 }
 
 /* Pluralsight GCP */
@@ -78,14 +75,29 @@
 }
 
 .contact {
-  margin: 2em 0;
+  margin-top: 2em;
+  width: 60%;
   background-color: #f0f0f0;
   color: #232425;
-  padding: 1em; 
+  padding: 1em;
+}
+
+
+#contactForm {
+ text-align: justify;
+}
+
+
+#fullName {
+  width: 40%;
+}
+
+#emailAddress {
+  width: 40%;
 }
 
 #subject {
-  width: 50%
+  width: 60%;
 }
 
 /* Social Media Icons */
@@ -100,4 +112,156 @@
   color: #3a9fe5;
   text-align: center;
   margin: 4em 0 2em 0;
+}
+
+/* Mobile Responsive */
+
+/* 
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  
+  .contact {
+    margin: 2em 6.6em;
+    width: 80%;
+  }
+
+  #fullName {
+    width: 80%;
+  }
+  
+  #emailAddress {
+    width: 80%;
+  }
+  
+  #subject {
+    width: 100%;
+  }
+  
+  #message {
+    width: 100%;
+  }
+  
+}
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  
+  .contact {
+    margin: 2em 5em;
+    width: 80%;
+  }
+
+  #fullName {
+    width: 80%;
+  }
+  
+  #emailAddress {
+    width: 80%;
+  }
+  
+  #subject {
+    width: 100%;
+  }
+  
+  #message {
+    width: 100%;
+  }
+  
+}
+
+/* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  
+  .contact {
+    margin: 2em 6.2em;
+    width: 80%;
+  }
+
+  #fullName {
+    width: 80%;
+  }
+  
+  #emailAddress {
+    width: 80%;
+  }
+  
+  #subject {
+    width: 100%;
+  }
+  
+  #message {
+    width: 100%;
+  }
+  
+}
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+  
+  .contact {
+    margin: 2em 3.4em;
+    width: 80%;
+  }
+
+  #fullName {
+    width: 60%;
+  }
+  
+  #emailAddress {
+    width: 60%;
+  }
+  
+  #subject {
+    width: 80%;
+  }
+  
+  #message {
+    width: 100%;
+  }
+  
+}
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+  
+  .contact {
+    margin: 2em;
+    width: 80%;
+  }
+
+  #fullName {
+    width: 100%;
+  }
+  
+  #emailAddress {
+    width: 100%;
+  }
+  
+  #subject {
+    width: 100%;
+  }
+  
+  #message {
+    width: 100%;
+  }
+  
 }

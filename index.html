@@ -53,7 +53,7 @@
       alt="You can call me Ninte." title="Ninte" />
     <h3 class="bold-under-white">@Usheninte</h3>
     <p>Hello world, my name is <b>'Ninte Dangana</b>.</p>
-    <p>I am a Software Engineer
+    <p>I am a Software Developer
       <br />
       interested in <b>Innovation</b>, the <b>Creative Arts</b> and <b>Entrepreneurship</b>. I have strong skills in
       <b>Leadership</b> and <b>Intercultural Communication</b>.</p>
@@ -151,38 +151,33 @@
 
   <!-- Contact Form -->
 
-  <!-- 
   <div class="container-fluid contact">
     <h4 class="under-blue">Contact Me</h4>
-    <div class="row">
-      <div class="col"></div>
-      <div class="col-sm-3">
-        <label>Name:</label>
-        <input type="text" />
+    <form id="contactForm" name="contactForm" 
+          method="POST" data-netlify="true">
+      <div class="form-group">
+        <label for="fullName">Full Name</label>
+        <input type="text" class="form-control" 
+                id="fullName" placeholder="John Doe">
       </div>
-      <div class="col-sm-3">
-        <label>Email:</label>
-        <input type="text" />
+      <div class="form-group">
+        <label for="emailAddress">Email address</label>
+        <input type="email" class="form-control" 
+                id="emailAddress" placeholder="name@example.com">
       </div>
-      <div class="col"></div>
-    </div>
-
-    <div class="row">
-      <div class="col"></div>
-      <div class="col-sm-10">
-        <label>Subject:</label>
-        <input type="text" id="subject" />
+      <div class="form-group">
+        <label for="subject">Subject</label>
+        <input type="text" class="form-control" 
+                id="subject" placeholder="Lorem Ipsum">
       </div>
-      <div class="col"></div>
-    </div>
-
-    <div class="row">
-      <div class="col"></div>
-      <div class="col-sm-6"></div>
-      <div class="col"></div>
-    </div>
-  </div> 
-  -->
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea class="form-control" 
+                  id="message" rows="5" placeholder="... Message"></textarea>
+      </div>
+      <input type="submit" class="btn btn-primary mb-2"></input>
+    </form>
+  </div>
 
   <!-- Social Media Icons -->
   <div class="container-fluid">
@@ -236,22 +231,7 @@
   <script src="https://www.gstatic.com/firebasejs/6.2.4/firebase-app.js"></script>
   <script src="https://www.gstatic.com/firebasejs/6.2.4/firebase-firestore.js"></script>
 
-  <script>
-    // Your web app's Firebase configuration
-    var firebaseConfig = {
-      apiKey: process.env.API_KEY,
-      authDomain: process.env.AUTO_DOMAIN,
-      databaseURL: process.env.DATABASE_URL,
-      projectId: process.env.PROJECT_ID,
-      storageBucket: "",
-      messagingSenderId: process.env.MSG_SEND_ID,
-      appId: process.env.APP_ID
-    };
-    // Initialize Firebase
-    firebase.initializeApp(firebaseConfig);
-
-    var db = firebase.firestore();
-  </script>
+  <script src="./app.js"></script>
 
 </body>
 
