@@ -20,6 +20,12 @@
   border-radius: 50%;
 }
 
+.bold-under {
+  color: #3a9fe5;
+  font-style: bold;
+  text-decoration: underline;
+}
+
 .bold-under-white {
   color: #3a9fe5;
   font-style: bold;
@@ -82,11 +88,9 @@
   padding: 1em;
 }
 
-
 #contactForm {
- text-align: justify;
+  text-align: justify;
 }
-
 
 #fullName {
   width: 40%;
@@ -122,7 +126,6 @@
 */
 
 @media (min-width: 1025px) and (max-width: 1280px) {
-  
   .contact {
     margin: 2em 6.6em;
     width: 80%;
@@ -131,19 +134,18 @@
   #fullName {
     width: 80%;
   }
-  
+
   #emailAddress {
     width: 80%;
   }
-  
+
   #subject {
     width: 100%;
   }
-  
+
   #message {
     width: 100%;
   }
-  
 }
 
 /* 
@@ -152,7 +154,6 @@
 */
 
 @media (min-width: 768px) and (max-width: 1024px) {
-  
   .contact {
     margin: 2em 5em;
     width: 80%;
@@ -161,19 +162,18 @@
   #fullName {
     width: 80%;
   }
-  
+
   #emailAddress {
     width: 80%;
   }
-  
+
   #subject {
     width: 100%;
   }
-  
+
   #message {
     width: 100%;
   }
-  
 }
 
 /* 
@@ -182,7 +182,6 @@
 */
 
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-  
   .contact {
     margin: 2em 6.2em;
     width: 80%;
@@ -191,19 +190,18 @@
   #fullName {
     width: 80%;
   }
-  
+
   #emailAddress {
     width: 80%;
   }
-  
+
   #subject {
     width: 100%;
   }
-  
+
   #message {
     width: 100%;
   }
-  
 }
 
 /* 
@@ -212,7 +210,6 @@
 */
 
 @media (min-width: 481px) and (max-width: 767px) {
-  
   .contact {
     margin: 2em 3.4em;
     width: 80%;
@@ -221,19 +218,18 @@
   #fullName {
     width: 60%;
   }
-  
+
   #emailAddress {
     width: 60%;
   }
-  
+
   #subject {
     width: 80%;
   }
-  
+
   #message {
     width: 100%;
   }
-  
 }
 
 /* 
@@ -242,7 +238,6 @@
 */
 
 @media (min-width: 320px) and (max-width: 480px) {
-  
   .contact {
     margin: 2em;
     width: 80%;
@@ -251,17 +246,16 @@
   #fullName {
     width: 100%;
   }
-  
+
   #emailAddress {
     width: 100%;
   }
-  
+
   #subject {
     width: 100%;
   }
-  
+
   #message {
     width: 100%;
   }
-  
 }
